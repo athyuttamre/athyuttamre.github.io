@@ -108,12 +108,14 @@ textarea {
 body {
     border-top: 5px solid #f93f3b;
     color: #222;
+
+    font-size: 1.2em;
     font-family: "Adobe Garamond Pro";
 }
 
 .container {
     max-width: 30em;
-    padding: 50px 20px;
+    padding: 40px 20px;
     margin: auto;
 }
 

@@ -47,6 +47,8 @@
 #   end
 # end
 
+activate :directory_indexes
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'

@@ -93,21 +93,82 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Responsive media
+ */
 
+ img, video, canvas {
+    max-width: 100%;
+ }
 
+ /*
+  * Layout
+  */
 
+body {
+    border-top: 5px solid #f93f3b;
+    color: #222;
+    font-family: "Adobe Garamond Pro";
+}
 
+.container {
+    max-width: 30em;
+    padding: 50px 20px;
+    margin: auto;
+}
 
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px 20px;
+    }
+}
 
+/*
+ * General Elements
+ */
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #ED0B07;
+}
 
+a:hover {
+    transition: 0.15s;
+    color: #f93f3b;
+}
 
+a:visited {
+    color: #C60906;
+}
 
+/*
+ * Navigation
+ */
+nav > ul {
+    padding: 0;
+}
 
+nav > ul > li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
 
+/*
+ * Social Icons
+ */
+.social-icon, .social-icon:visited {
+    text-decoration: none;
+    border: none;
+    color: #9b9b9b;
 
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
 
-
-
+.social-icon:hover {
+    transition: 0.15s;
+    color: #f93f3b;
+}
 
 /* ==========================================================================
    Helper classes

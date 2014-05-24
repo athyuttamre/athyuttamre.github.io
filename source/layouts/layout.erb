@@ -26,10 +26,12 @@
         <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h1>Athyuttam Reddy</h1>
-        <%= partial "navigation" %>
-        <%= yield %>
-        <%= partial "social_icons" %>
+        <div class="container <%= current_page.data.container_classes %>">
+            <h1>Athyuttam Reddy</h1>
+            <%= partial "navigation" %>
+            <%= yield %>
+            <%= partial "social-icons" %>
+        </div>
 
         <!-- Google Analytics -->
         <script>

@@ -1,4 +1,4 @@
-beta
+athyuttamre.github.io
 ====
 
-Beta version of my personal website.
+Live version of my personal website, up and running at www.athyuttamreddy.com.

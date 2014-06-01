@@ -95,6 +95,37 @@ textarea {
    ========================================================================== */
 
 /*
+ * Typography
+ */
+@font-face {
+  font-family: 'Mercury Display Bold';
+  src: url('/fonts/Mercury-DisplayBold/mercury-displaybold.eot?') format('eot'), url('/fonts/Mercury-DisplayBold/mercury-displaybold.woff') format('woff'), url('/fonts/Mercury-DisplayBold/mercury-displaybold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mercury';
+  src: url('/fonts/Mercury-TextG1Roman/mercury-textg1roman.eot?') format('eot'), url('/fonts/Mercury-TextG1Roman/mercury-textg1roman.woff') format('woff'), url('/fonts/Mercury-TextG1Roman/mercury-textg1roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mercury Italic';
+  src: url('/fonts/Mercury-TextG1Italic/mercury-textg1italic.eot?') format('eot'), url('/fonts/Mercury-TextG1Italic/mercury-textg1italic.woff') format('woff'), url('/fonts/Mercury-TextG1Italic/mercury-textg1italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mercury Semibold';
+  src: url('/fonts/Mercury-TextG1Semibold/mercury-textg1semibold.eot?') format('eot'), url('/fonts/Mercury-TextG1Semibold/mercury-textg1semibold.ttf') format('truetype');
+}
+
+i, em {
+    font-family: "Mercury Italic";
+}
+
+b, strong {
+    font-family: "Mercury Semibold";
+}
+
+/*
  * Responsive media
  */
 
@@ -107,15 +138,15 @@ textarea {
   */
 
 body {
-    border-top: 5px solid #f93f3b;
-    color: #222;
+    border-top: 5px solid #570000;
+    color: #333;
 
     font-size: 1.2em;
-    font-family: "calluna", Georgia, serif;
+    font-family: "Mercury", Georgia, serif;
 }
 
 .container {
-    max-width: 30em;
+    max-width: 600px;
     padding: 10px 20px;
     margin: auto;
 }
@@ -129,20 +160,25 @@ body {
  * General Elements
  */
 a {
+    color: #570000;
     text-decoration: none;
-    border-bottom: 1px solid;
-    color: #ED0B07;
 }
 
 a:hover {
-    color: #f93f3b;
+    border-bottom: 1px solid #570000;
 }
 
 /*
  * Header
  */
+h1 {
+    font-family: "Mercury Display Bold", "Mercury", Georgia, serif;
+    font-weight: normal;
+    border-bottom: 1px solid #570000;
+}
+
 h1 > a, h1 > a:hover {
-    color: #222;
+    color: inherit;
     border-bottom: none;
 }
 
@@ -159,24 +195,37 @@ nav > ul > li {
     margin-right: 0.5em;
 }
 
-/*
- * Profile Picture
- */
+.nav-link {
+    border: none;
+}
+
+.nav-current {
+    border-bottom: 1px solid #570000;
+}
 
 /*
  * Social Icons
  */
+#social-icons {
+    padding: 1em 0;
+    text-align: center;
+
+    border-top: 1px solid #999;
+}
+
 .social-icon, .social-icon:visited {
     text-decoration: none;
     border: none;
-    color: #9b9b9b;
+    color: #999;
 
     font-size: 1.2em;
-    margin-right: 0.2em;
+    vertical-align: middle;
+    margin: 0 0.1em;
 }
 
 .social-icon:hover {
-    color: #f93f3b;
+    color: #570000;
+    border: none;
 }
 
 /* ==========================================================================
@@ -185,6 +234,16 @@ nav > ul > li {
    ========================================================================== */
 
 @media screen and (min-width: 600px) {
+
+    .portrait {
+        display: inline-block;
+        max-width: 150px;
+    }
+
+    .content {
+        display: inline-block;
+    }
+
     .container {
         padding: 40px 20px;
     }

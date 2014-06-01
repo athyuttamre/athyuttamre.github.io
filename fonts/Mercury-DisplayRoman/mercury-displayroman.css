@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MercuryDisplayRoman';
+    src: url('mercury-displayroman.eot');
+    src: url('mercury-displayroman.eot') format('embedded-opentype'),
+         url('mercury-displayroman.woff') format('woff'),
+         url('mercury-displayroman.ttf') format('truetype'),
+         url('mercury-displayroman.svg#MercuryDisplayRoman') format('svg');
+}

@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'MercuryDisplayBold';
-    src: url('mercury-displaybold.eot');
-    src: url('mercury-displaybold.eot') format('embedded-opentype'),
-         url('mercury-displaybold.woff') format('woff'),
-         url('mercury-displaybold.ttf') format('truetype'),
-         url('mercury-displaybold.svg#MercuryDisplayBold') format('svg');
-}

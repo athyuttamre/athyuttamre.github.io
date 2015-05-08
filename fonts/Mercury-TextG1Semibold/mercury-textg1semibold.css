@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'MercuryTextG1Semibold';
-    src: url('mercury-textg1semibold.eot');
-    src: url('mercury-textg1semibold.eot') format('embedded-opentype'),
-         url('mercury-textg1semibold.woff') format('woff'),
-         url('mercury-textg1semibold.ttf') format('truetype'),
-         url('mercury-textg1semibold.svg#MercuryTextG1Semibold') format('svg');
-}

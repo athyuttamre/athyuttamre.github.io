@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Atlas Grotesk Bold';
+  src: url('AtlasGrotesk-Bold.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-Bold.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-Bold.svg#e865ba5279b8b4f4d93cf0b04320407c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Bold';
+  src: url('AtlasGrotesk-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-BoldItalic.svg#95e811586f00295851cabf8018601cc9') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Light';
+  src: url('AtlasGrotesk-Light.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-Light.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-Light.svg#60913efd62f14ac4c9bbceaf30b4cd27') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Light';
+  src: url('AtlasGrotesk-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-LightItalic.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-LightItalic.svg#32722b431487329c128651b50a60bd9d') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Medium';
+  src: url('AtlasGrotesk-Medium.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-Medium.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-Medium.svg#30b8769f38d1b954029356ac11ac2bae') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Medium';
+  src: url('AtlasGrotesk-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-MediumItalic.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-MediumItalic.svg#97ca10f1b212e3369ee0c5a54f5f70a0') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Regular';
+  src: url('AtlasGrotesk-Regular.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-Regular.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-Regular.svg#4c452fbe91af52f13ffe1a98c5a30926') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Regular';
+  src: url('AtlasGrotesk-RegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('AtlasGrotesk-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AtlasGrotesk-RegularItalic.woff') format('woff'), /* Modern Browsers */
+       url('AtlasGrotesk-RegularItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AtlasGrotesk-RegularItalic.svg#6693a1f6b6ec28a42dbc42a1bdaa777c') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+

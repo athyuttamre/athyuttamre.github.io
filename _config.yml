@@ -1,8 +1,8 @@
 # Site settings
-title: Atty Eleti
+title: Athyuttam Eleti
 email: athyuttamre@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Atty is an undergrad studying computer science and design at Brown University.
+  The personal website of Athyuttam (Atty) Eleti, a student of computer science and design at Brown University.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://athyuttamre.com" # the base hostname & protocol for your site
 twitter_username: athyuttamre

@@ -19,7 +19,7 @@ body {
   font-family: "Atlas Grotesk", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 2.4rem;
+  line-height: 1.5;
 
   color: #333;
 }
@@ -56,6 +56,11 @@ a {
   &.no-underline {
     border: 0 !important;
   }
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 32px;
 }
 
 /* Header */
@@ -252,9 +257,27 @@ header {
   }
 }
 
+#tab-snooze {
+  a {
+    border-color: #ffd21f;
+  }
+}
+
+#pia {
+  a {
+    border-color: #ff3f4e;
+  }
+}
+
+#cs22 {
+  a {
+    border-color: #00aebd;
+  }
+}
+
 /* Footer */
 footer {
-  margin-top: 160px;
+  margin-top: 120px;
   margin-bottom: 60px;
   padding-top: 24px;
 

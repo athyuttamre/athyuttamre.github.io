@@ -220,6 +220,14 @@ header {
   }
 }
 
+#cs-yearbook {
+  background-image: none;
+
+  &:before {
+    background-image: linear-gradient(-185deg, rgba(63,63,63,0.80) 0%, #030E28 100%);
+  }
+}
+
 #about-me {
   background-image: url("/img/pp.png");
   background-position: 50%;

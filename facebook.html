@@ -2,8 +2,157 @@
 layout: page
 ---
 
-<h2>Facebook</h2>
+<article>
+  <h1>Facebook</h1>
 
-I'm working on finalizing this, so check back later!
+  <p>I spent the summer of 2015 as a product design intern at Facebook HQ in Menlo Park, California. Working on the Payments team, I helped unify mobile payments across multiple products and platforms, and delivered research, prototypes, visual and interaction designs.</p>
 
-If you'd like to chat, please send me an email at <a href="mailto:athyuttamre@gmail.com">athyuttamre@gmail.com</a>.
+  <section id="introduction">
+    <h2>Introduction</h2>
+
+    <p>Payments at Facebook operates at an incredible scale. Every year, the company processes billions of dollars in transactions, in over 200 currencies, through over 30 different payment methods.</p>
+
+    <p>Users pay on Facebook through a variety of products: when placing advertisements, making donations, buying things in games, sending money to friends, and most recently, shopping on Facebook pages.</p>
+
+    <p>The stakeholders in this space include small and medium business owners, casual shoppers, Messenger users, young and old gamers, and many different kinds of people, across the world, from different kinds of backgrounds. Anything we designed had to work for everyone.</p>
+  </section>
+
+  <section id="problem">
+    <h2>Problem</h2>
+
+    <blockquote>
+      <p>How do we enable a simple, secure, trustworthy, and consistent payments experience across Facebook?</p>
+    </blockquote>
+
+    <p>As it stood, payment flows across Facebook were drastically inconsistent, sometimes missing key features, other times offering a poor user experience. This led to loss of reliability for users, directly affecting their trust in the company.</p>
+
+    <p>In addition, internally each product team had designed their own payment flows, often separately between web, iOS, and Android. And integrating payments into a new product took developers a very long time.</p>
+  </section>
+
+  <section id="hypothesis">
+    <h2>Hypothesis</h2>
+
+    <blockquote>
+      <p>A modularized payments component that is easy to implement, and a pleasure to use.</p>
+    </blockquote>
+
+    <p>We decided to design and engineer a single payments module that other products could easily use. In doing so, we set a few goals for ourselves:</p>
+
+    <h3>Goals</h3>
+    <ul>
+      <li>Help users identify, trust, and feel secure about paying on Facebook.</li>
+      <li>Help product teams rapidly integrate payments into their flows, ideally < 2 weeks.</li>
+      <li>Create <strong>one solid, consistent system</strong> that could be improved and optimized over time.</li>
+    </ul>
+
+    <h3>Features</h3>
+    <ul>
+      <li>Adding and managing payment methods</li>
+      <li>Selecting payment methods and end-to-end flow</li>
+      <li>Transaction history and settings</li>
+      <li>Customizable design, extensible API</li>
+    </ul>
+  </section>
+
+  <section id="process">
+    <h2>Process</h2>
+
+    <section id="audit">
+      <h3>Audit</h3>
+
+      <p>I started with an extensive audit of existing flows on web, mobile web, iOS and Android. I took screenshots of payment flows in Ads, Pages Commerce, Messenger, Games, Business Manager, as well as Settings.</p>
+
+      <p>In addition, my team and I set up meetings with various other product designers, from Donations to Ads Manager, and asked for their feedback. What did they want from payments in their product? How could we design something that worked for them?</p>
+
+      <p>Finally, I spent a lot of time reading about the payments space. I learned about the complex infrastructure at Facebook, the various payment networks (VISA, MasterCard, and so on), local payment methods such as Boleto Bancario in Brazil, and much more. I also analyzed mobile payments UX in other products like Uber, Stripe, Apple Pay, and so on.</p>
+
+      <p>This phase prepared me to understand the needs of my project better, and set me up well for the next stage: ideation.</p>
+    </section>
+
+    <section id="ideation">
+      <h3>Ideation</h3>
+
+      <h4>User Experience</h4>
+
+      <p>The most important question we tackled was a high-level one. What do we want users to feel? What are some fundamental principles we should keep in mind as we designed?</p>
+
+      <blockquote class="pull-quote">
+        <p>What do we want users to feel?</p>
+      </blockquote>
+
+      <p>After a long brainstorm with our team, we arrived at some key words:</p>
+
+      Approachable, Transparent, Familiar
+      Safe, In-Control, Pillars of Trust
+      Simple, Fast, Intuitive
+
+      <h4>User Flows</h4>
+
+      <p>Building on these principles, I designed many kinds of user flows. Some included full screen interfaces, other interstitial dialogs. Some used popups, others used dropdowns.</p>
+
+      <p>Many of these worked in the ideal case, but broke down when I stress-tested them in different scenarios. In Ads, for example, the interface had to communicate the complex nature of ads payments; the monthly billing, the maximum threshold, any past dues, and more. A small dialog just wasn’t enough real estate.</p>
+
+      <blockquote class="pull-quote">
+        <p>A small dialog just wasn’t enough real estate.</p>
+      </blockquote>
+
+      <p>Along the way, I prototyped my wireframes using Origami, to make sure what worked in my mind also worked in my hand.</p>
+    </section>
+
+    <section id="iteration">
+      <h3>Iteration</h3>
+
+      <p>In the end, I settled on two possible design directions: what I called Dynamic Card and Full Screen. Both were exciting, both worked, and had strengths in different applications.</p>
+
+      <h4>Dynamic Card</h4>
+
+      <p>This approach was beautiful and a seamless way to pay. It only took over part of the screen, retaining context of the primary payment flow.</p>
+
+      <p>The whole experience was extremely light-weight, and I imagined it would work well in simple transactional flows such as donations and shopping.</p>
+
+      <h4>Full Screen</h4>
+
+      <p>On the flipside, the full screen design allowed for maximum flexibility. It was easy to build, and would work everywhere, without exception. It also was a safe foundation to build on ideas for later.</p>
+
+      <p>In particular, we were sure it would work with the complex nature of ads and the unpredictability of future products.</p>
+
+      <h4>Other Flows</h4>
+
+      <p>Along the way, to make sure my designs worked in small but important scenarios, I tested them in all the ways possible.</p>
+    </section>
+
+    <section id="prototyping">
+      <h3>Prototyping</h3>
+
+      <p>Of course, at every stage of this process, prototyping was key. My goal in prototyping my designs wasn’t to create beautiful presentations, but to validate my ideas.</p>
+
+      <blockquote class="pull-quote">
+        <p>Prototypes I could hold in my hand and show to other people allowed me to get instant, actionable feedback.</p>
+      </blockquote>
+
+      <p>Even if they were rough around the edges, prototypes I could hold in my hand and show to other people allowed me to get instant, actionable feedback.</p>
+    </section>
+  </section>
+
+  <section id="solution">
+    <h2>Solution</h2>
+
+    <p>In the end, we decided to go with the full-screen design. I iterated intensely on visual style, and delivered mockups and specifications to our development team.</p>
+
+    <p>Here are the final screens for the credit card form and the payment selection flows.</p>
+  </section>
+
+  <section id="takeaways">
+    <h2>Takeaways</h2>
+    
+    <p>Designing mobile payments at Facebook was a great learning experience. The situation presented a complex systems design challenge, and with the help of my amazing mentor and team, I was able to solve most of it.</p>
+
+    <blockquote class="pull-quote">
+        <p>In hindsight, my engineering background was instrumental in my success over the summer.</p>
+      </blockquote>
+
+    <p>Also, in hindsight, my engineering background was instrumental in my success over the summer. From breaking down big problems into small ones, to understanding how things are actually implemented, computer science helped me every step of the way. And of course, communicating with engineers at an equal level where we could both geek out about implementation details was great fun.</p>
+
+    <p>I’m looking forward to seeing these interfaces and interactions in the wild. If you’d like to hear more about my experience, please drop me a line at <a href="mailto:athyuttamre@gmail.com">athyuttamre@gmail.com</a>.</p>
+  </section>
+</article>

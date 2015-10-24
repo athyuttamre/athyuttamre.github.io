@@ -1,0 +1,202 @@
+---
+# facebook.scss
+# Specific styles for Facebook case-study.
+---
+
+/* Colors */
+
+$fb-blue: #3B5998;
+$fb-active-blue: #5890FF;
+$fb-green: #00B6A9;
+
+/* General Styles */
+
+body {
+  background-image: url("/img/facebook/waves.svg");
+  background-size: 100%;
+  background-position: 50% 200px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 980px;
+}
+
+header {
+  margin-bottom: 72px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.blue-section {
+  background-color: #F8F8F9;
+}
+
+blockquote {
+  margin: 0;
+
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  color: $fb-blue;
+}
+
+.pull-quote {
+  max-width: 480px;
+  margin: 32px auto;
+
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+
+  text-transform: uppercase;
+  color: $fb-blue;
+}
+
+/* Parts */
+
+h1 {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+
+  text-align: center;
+  color: $fb-blue;
+}
+
+.byline {
+  margin-top: 0;
+
+  font-size: 2rem;
+  text-align: center;
+  color: #999;
+}
+
+.content {
+  max-width: 720px;
+  margin: auto;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+#introduction {
+  margin-top: 50vw;
+
+  padding: 0;
+  padding-bottom: 120px;
+
+  .intro-phones {
+    position: relative;
+
+    img {
+      margin-top: 20px;
+      vertical-align: text-bottom;
+    }
+
+    #intro-iphone {
+      z-index: 1;
+    }
+
+    #intro-android {
+      z-index: 0;
+      margin-left: -20px;
+    } 
+  }
+
+  .intro-content {
+    padding-left: 60px;
+  }
+}
+
+#problem {
+  h2 {
+    color: #A1A7B3;
+  }
+
+  #problem-cc {
+    margin-top: 60px;
+  }
+}
+
+#hypothesis {
+  blockquote {
+    color: $fb-active-blue;
+  }
+}
+
+#audit {
+  .pull-quote {
+    color: $fb-green;
+  }
+
+  #audit-boleto {
+    width: 40%;
+  }
+}
+
+#ideation {
+  padding-bottom: 0;
+
+  .pull-quote {
+    color: $fb-green;
+  }
+
+  #ideation-prototype {
+    margin-top: 50px;
+  }
+
+  video {
+    position: relative;
+  }
+
+  .prototype-caption {
+    margin-top: 80%;
+    padding-left: 50px;
+
+    font-size: 1.4rem;
+
+    span {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#process {
+  padding: 0;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+}
+
+.card {
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
+}
+
+#iteration {
+  .dynamic-card-images {
+    text-align: center;
+
+    img {
+      width: 200px;
+      margin: 20px 10px;
+
+      @extend .card;
+    }
+  }
+}
+
+#takeaways {
+  .pull-quote {
+    color: $fb-active-blue;
+  }
+}

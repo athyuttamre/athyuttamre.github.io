@@ -13,6 +13,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% if page.css %}{{ page.css }}{% endif %}
 
   <!-- JavaScript -->
   <script>

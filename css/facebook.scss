@@ -3,8 +3,10 @@
 # Specific styles for Facebook case-study.
 ---
 
-@import "slick";
-@import "slick-theme";
+@import "vendor/slick";
+@import "vendor/slick-theme";
+@import "variables";
+@import "case-study";
 
 /* Colors */
 
@@ -21,73 +23,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
-  max-width: 980px;
-}
-
-header {
-  margin-bottom: 72px;
-}
-
-section {
-  padding: 80px 0;
-}
-
-.blue-section {
-  background-color: #F8F8F9;
-}
-
-blockquote {
-  margin: 0;
-
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 3.4rem;
-  color: $fb-blue;
-}
-
-.pull-quote {
-  max-width: 480px;
-  margin: 32px auto;
-
-  font-size: 2.2rem;
-  line-height: 1.5;
-  font-weight: 400;
-  font-style: italic;
-
-  text-transform: uppercase;
+blockquote, h1 {
   color: $fb-blue;
 }
 
 /* Parts */
-
-h1 {
-  margin: 0;
-  margin-bottom: 12px;
-
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-
-  text-align: center;
-  color: $fb-blue;
-}
-
-.byline {
-  margin-top: 0;
-
-  font-size: 2rem;
-  text-align: center;
-  color: #999;
-}
-
-.content {
-  max-width: 720px;
-  margin: auto;
-}
-
-.intro-text {
-  text-align: center;
-}
 
 #introduction {
   margin-top: 50vw;

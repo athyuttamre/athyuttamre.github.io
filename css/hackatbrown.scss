@@ -5,3 +5,39 @@
 
 @import "variables";
 @import "case-study";
+
+$hab-pink: #f05d7d;
+$hab-blue: #3b8eb9;
+$hab-teal: #26a59f;
+
+#logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+
+  height: 72px;
+}
+
+#intro {
+  padding-top: 0;
+}
+
+h1 {
+  color: $hab-pink;
+}
+
+strong {
+  color: $hab-blue;
+}
+
+.social {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.twitter-follow-button {
+  display: block;
+  margin: auto;
+
+  margin-top: 24px;
+}

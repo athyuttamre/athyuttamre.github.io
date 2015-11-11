@@ -49,30 +49,24 @@ css: <link rel="stylesheet" href="/css/kayak.css">
         <p>I started by updating the Trips home page. Introducing a simplified navigation and new visual style helped me set the tone for the rest of the project.</p>
 
         <img src="/img/kayak/trips-home.png">
+
+        <p>Next, in tackling the event details page, I worked on a bunch of little features that improved the user experience.</p>
+
+        <img src="/img/kayak/trip-details.png">
       </div>
 
-      <div class="row">
-        <div class="content">
-          Next, in tackling the event details page, I worked on a bunch of little features that improved the user experience.
+      <div id="design-items" class="row side-items">
+        <div class="col-md-4">
+          <h3>Cleaner Visual Language</h3>
+          <p>More whitespace and a stronger grid meant improved readability and consistency.</p>
         </div>
-        <div class="col-md-7">
-
+        <div class="col-md-4">
+          <h3>Action Bar</h3>
+          <p>Instead of having to scroll to each day, the action bar allowed users immediate access to common functions.</p>
         </div>
-        <div class="col-md-5">
-          <ul id="design-items" class="side-items">
-            <li>
-              <h3>Simplified Navigation</h3>
-              <p>By removing unnecessary scripts and simplifying our LESS and Velocity templates, I reduced loadtime and improved code maintainability.</p>
-            </li>
-            <li>
-              <h3>Action Bar</h3>
-              <p>In addition to fixing some tricky asynchronous loading bugs, I added dynamic resizing functionality and some helper functions to the Maps library.</p>
-            </li>
-            <li>
-              <h3>Notes and Calendar</h3>
-              <p>Focusing on speed for the new Trips, I implemented pushState based navigation across all browsers.</p>
-            </li>
-          </ul>
+        <div class="col-md-4">
+          <h3>Notes and Calendar</h3>
+          <p>Reminiscing the natural planning process of notebooks and calendars, this was a fun addition.</p>
         </div>
       </div>
 
@@ -91,27 +85,33 @@ css: <link rel="stylesheet" href="/css/kayak.css">
         <p>Primarily writing front-end code, I built all the features I designed, and helped trim down the codebase multifold. Some of the key changes include:</p>
       </div>
 
-      <div class="row">
-          <div class="col-md-7">
-
+      <div id="engineering-items" class="content">
+        <div class="row side-items">
+          <div class="col-md-6">
+            {% include icons/responsive.html %}
+            <h3>Responsive Design</h3>
+            <p>Took a desktop-only product and made it completely responsive, working on tablets and phones of all sizes.</p>
           </div>
-          <div class="col-md-5">
-            <ul id="engineering-items" class="side-items">
-              <li>
-                <h3>Optimizing JS and CSS</h3>
-                <p>By removing unnecessary scripts and simplifying our LESS and Velocity templates, I reduced loadtime and improved code maintainability.</p>
-              </li>
-              <li>
-                <h3>Improvements to Maps Library</h3>
-                <p>In addition to fixing some tricky asynchronous loading bugs, I added dynamic resizing functionality and some helper functions to the Maps library.</p>
-              </li>
-              <li>
-                <h3><code>pushState</code> based Navigation</h3>
-                <p>Focusing on speed for the new Trips, I implemented pushState based navigation across all browsers.</p>
-              </li>
-            </ul>
+          <div class="col-md-6">
+            {% include icons/optimized.html %}
+            <h3>Optimized JS and CSS</h3>
+            <p>By simplifying our code and trimming our LESS and Velocity templates, I reduced loadtime and improved code maintainability.</p>
           </div>
         </div>
+
+        <div class="row side-items">
+          <div class="col-md-6">
+            {% include icons/maps.html %}
+            <h3>Improvements to Maps Library</h3>
+            <p>After fixing some tricky asynchronous loading bugs, I added dynamic resizing functionality and some helper functions to the Maps library.</p>
+          </div>
+          <div id="push-state" class="col-md-6">
+            {% include icons/layers.html %}
+            <h3><code>pushState</code> based Navigation</h3>
+            <p>Focusing on speed for the new Trips, I implemented pushState based navigation across all browsers.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

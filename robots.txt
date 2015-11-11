@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow: /facebook-private.html
-Disallow: /img/facebook/
-Disallow: /css/facebook.css

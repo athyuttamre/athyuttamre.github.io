@@ -3,7 +3,7 @@
        http://github.com/athyuttamre/athyuttamre.github.io -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.non_responsive %}{% else %}<meta name="viewport" content="width=device-width, initial-scale=1">{% endif %}
   {% if page.meta %}{{ page.meta }}{% endif %}
 
   <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>

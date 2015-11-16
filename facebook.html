@@ -166,8 +166,8 @@ non_responsive: true
       </div>
 
       <div class="dynamic-card-images cards">
-        <img src="/img/facebook/dynamic-card/1.png" data-action="zoom">
-        <img src="/img/facebook/dynamic-card/4.png" data-action="zoom">
+        <img src="/img/facebook/dynamic-card/1.png">
+        <img src="/img/facebook/dynamic-card/4.png">
         <img src="/img/facebook/dynamic-card/5.png"data-action="zoom">
         <img src="/img/facebook/dynamic-card/6.png"data-action="zoom">
       </div>
@@ -183,11 +183,11 @@ non_responsive: true
       </div>
 
       <div class="full-screen-images cards">
-        <img src="/img/facebook/full-screen/1.png" data-action="zoom">
-        <img src="/img/facebook/full-screen/2.png" data-action="zoom">
-        <img src="/img/facebook/full-screen/3.png" data-action="zoom">
-        <img src="/img/facebook/full-screen/4.png" data-action="zoom">
-        <img src="/img/facebook/full-screen/5.png" data-action="zoom">
+        <img src="/img/facebook/full-screen/1.png">
+        <img src="/img/facebook/full-screen/2.png">
+        <img src="/img/facebook/full-screen/3.png">
+        <img src="/img/facebook/full-screen/4.png">
+        <img src="/img/facebook/full-screen/5.png">
       </div>
 
       <div class="container">
@@ -203,18 +203,18 @@ non_responsive: true
       </div>
 
       <div class="1password-images cards">
-        <img src="/img/facebook/1password/1.png" data-action="zoom">
-        <img src="/img/facebook/1password/2.png" data-action="zoom">
-        <img src="/img/facebook/1password/3.png" data-action="zoom">
-        <img src="/img/facebook/1password/4.png" data-action="zoom">
-        <img src="/img/facebook/1password/5.png" data-action="zoom">
+        <img src="/img/facebook/1password/1.png">
+        <img src="/img/facebook/1password/2.png">
+        <img src="/img/facebook/1password/3.png">
+        <img src="/img/facebook/1password/4.png">
+        <img src="/img/facebook/1password/5.png">
       </div>
 
       <div class="card-io-images cards">
-        <img src="/img/facebook/card-io/1.png" data-action="zoom">
-        <img src="/img/facebook/card-io/2.png" data-action="zoom">
-        <img src="/img/facebook/card-io/3.png" data-action="zoom">
-        <img src="/img/facebook/card-io/4.png" data-action="zoom">
+        <img src="/img/facebook/card-io/1.png">
+        <img src="/img/facebook/card-io/2.png">
+        <img src="/img/facebook/card-io/3.png">
+        <img src="/img/facebook/card-io/4.png">
       </div>
     </section>
 
@@ -234,22 +234,44 @@ non_responsive: true
       </div>
 
       <div class="prototypes">
-        <video controls>
-          <source src="/img/facebook/prototypes/floating-labels.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="/img/facebook/prototypes/cc-saving.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="/img/facebook/prototypes/slide-up.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="/img/facebook/prototypes/android-inline.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <figure>
+          <video controls>
+            <source src="/img/facebook/prototypes/floating-labels.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            Testing floating labels on iOS to see if they improve form usability.
+          </figcaption>
+        </figure>
+        <figure>
+          <video controls>
+            <source src="/img/facebook/prototypes/cc-saving.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            Experimenting with a more seamless saving flow. The phone vibrates on sucess.
+          </figcaption>
+        </figure>
+        <figure>
+          <video controls>
+            <source src="/img/facebook/prototypes/slide-up.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            After mocking up the small and full-screen state of the card, I wanted to visualize
+            the transition between them.
+          </figcaption>
+        </figure>
+        <figure>
+          <video controls>
+            <source src="/img/facebook/prototypes/android-inline.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            Prototyping for Android is fun yet challenging, since Material Design is so expressive. Here,
+            an inline selection flow.
+          </figcaption>
+        </figure>
       </div>
     </section>
   </section>
@@ -387,8 +409,6 @@ non_responsive: true
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/js/slick.min.js"></script>
-<script src="/js/transition.js"></script>
-<script src="/js/zoom.min.js"></script>
 <script>
   $(document).ready(function(){
     $('.prototypes').slick({

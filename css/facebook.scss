@@ -147,6 +147,10 @@ blockquote, h1 {
     width: 400px;
     outline: 0;
   }
+
+  figcaption {
+    max-width: 400px;
+  }
 }
 
 #prototyping {

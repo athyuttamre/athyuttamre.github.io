@@ -125,16 +125,14 @@ blockquote, h1 {
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
 }
 
-#iteration {
-  .cards {
-    text-align: center;
+.cards {
+  text-align: center;
 
-    img {
-      width: 200px;
-      margin: 20px 10px;
+  img {
+    width: 200px;
+    margin: 20px 10px;
 
-      @extend .card;
-    }
+    @extend .card;
   }
 }
 
@@ -149,7 +147,9 @@ blockquote, h1 {
     width: 400px;
     outline: 0;
   }
+}
 
+#prototyping {
   .slick-slide {
     margin: 0 35px;
 
@@ -162,7 +162,9 @@ blockquote, h1 {
     opacity: 1.0;
     transform: scale(1.0);
   }
+}
 
+#prototyping, #solution {
   .slick-dots li button:before {
     font-size: 20px;
   }
@@ -225,8 +227,67 @@ blockquote, h1 {
   }
 }
 
+#solution {
+  border-top: 10px solid $fb-active-blue;
+}
+
+.slideshow {
+  margin-bottom: 64px;
+
+  .card {
+    width: 230px;
+    display: inline-block;
+  }
+
+  figure {
+    padding-bottom: 0;
+  }
+
+  figcaption {
+    margin-bottom: 0;
+  }
+
+  .slick-slide {
+    outline: 0;
+  }
+
+  .slick-dots {
+    margin-top: 0;
+  }
+
+  .slick-next, .slick-prev {
+    width: 20px;
+    height: 80% !important;
+    background-image: inherit !important;
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &:after {
+      background-image: url("/img/facebook/arrow-prev.png");
+    }
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-disabled {
+    cursor: default;
+    
+    &:after, &:hover:after {
+      opacity: 0;
+    }
+  }
+}
+
 #takeaways {
   .pull-quote {
     color: $fb-active-blue;
+  }
+
+  img {
+    margin: 24px 0;
   }
 }

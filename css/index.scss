@@ -81,9 +81,10 @@
   border: 0;
   border-radius: 5px;
 
-  background-image: url("/img/thumbnails/facebook.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: all 0.1s ease-in-out;
 
   &:before {
     content: " ";
@@ -93,13 +94,10 @@
     left: 0;
     right: 0;
 
-    border: 1px solid #ccc;
+    opacity: 0.95;
     border-radius: 5px;
 
-    opacity: 0.9;
-    background-image: linear-gradient(-185deg, rgba(88,144,255,0.80) 0%, #141e33 100%);
-
-    transition: opacity 0.1s ease-out;
+    transition: all 0.1s ease-in-out;
   }
 
   .content {
@@ -114,6 +112,8 @@
     color: white;
     border: 0;
 
+    transform: scale(1.01);
+
     &:before {
       opacity: 1.0;
     }
@@ -124,12 +124,28 @@
   height: 360px;
 }
 
+#figma {
+  background-image: url("/img/thumbnails/figma.png");
+
+  &:before {
+    background-image: linear-gradient(185deg, rgba(11, 38, 64, 0.5) 20%, #0c232a 100%);
+  }
+}
+
+#facebook {
+  background-image: url("/img/thumbnails/facebook.png");
+
+  &:before {
+    background-image: linear-gradient(-185deg, rgba(88, 144, 255, 0.9) 0%, rgba(20, 30, 51, 1.0) 100%);
+  }
+}
+
 #hackatbrown {
   background-image: url("/img/thumbnails/hackatbrown.png");
   background-position: 40%;
 
   &:before {
-    background-image: linear-gradient(-185deg, rgba(255,255,255,0.30) 0%, rgba(240,93,125,0.80) 66%, #f05d7d 100%);
+    background-image: linear-gradient(-185deg, rgba(240, 93, 125,0.50) 0%, rgba(240,93,125,1.0) 66%, #f05d7d 100%);
   }
 }
 
@@ -139,13 +155,29 @@
   background-image: url("/img/thumbnails/kayak.png");
 
   &:before {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
     background-image: linear-gradient(-185deg, rgba(255,255,255,0.80) 0%, #f6f6f6 100%);
   }
 
   h3 {
     color: #f29530; /* Modified KAYAK Orange */
+  }
+}
+
+#signmeup {
+  background-image: url("/img/thumbnails/signmeup.png");
+
+  &:before {
+    background-image: linear-gradient(-185deg, rgba(64, 145, 67, 0.65) 0%, rgba(64, 145, 67, 1.00) 100%);
+  }
+}
+
+#balance {
+  background-image: url("/img/thumbnails/balance.png");
+
+  &:before {
+    background-image: linear-gradient(185deg, rgba(11, 38, 64, 0.5) 20%, #0c232a 100%);
   }
 }
 

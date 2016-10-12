@@ -1,0 +1,82 @@
+---
+# signmeup.scss
+# Specific styles for SignMeUp case-study.
+---
+
+@import "variables";
+@import "case-study";
+
+$smu-green: hsla(121, 38%, 55%, 1.00);
+$smu-dark-green: hsla(161, 62%, 25%, 1.00);
+$smu-brown: hsla(44, 71%, 96%, 1.00);
+$smu-yello: hsla(48, 98%, 66%, 1.00);
+
+.alt-section {
+  background-color: $smu-brown;
+}
+
+h1 {
+  color: $smu-green;
+}
+
+h2 span {
+  font-weight: 300;
+}
+
+img {
+  margin: 18px 0;
+}
+
+figure {
+  position: relative;
+  padding: 0;
+
+  figcaption {
+    text-align: center !important;
+  }
+}
+
+.shadow-img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.border-img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pull-quote {
+  font-size: 2rem;
+  font-style: normal;
+  text-transform: none;
+
+  color: $smu-dark-green;
+
+  padding: 2rem 0;
+
+  &:before, &:after {
+    content: " ";
+
+    position: absolute;
+    width: 80px;
+    height: 2px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: $smu-dark-green;
+  }
+}
+
+.signup-img {
+  width: 80%;
+}
+
+.brown-login-img {
+  position: absolute;
+
+  right: 0;
+  top: 82px;
+
+  width: 30%;
+}

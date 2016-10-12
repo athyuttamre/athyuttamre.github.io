@@ -68,6 +68,32 @@ figure {
   }
 }
 
+.cta-buttons {
+  margin-bottom: 24px;
+  text-align: center;
+
+  .outline-btn {
+    display: inline-block;
+
+    margin: 0 0.5rem;
+    padding: 1rem 1.5rem;
+
+    color: $smu-green;
+    border: 2px solid $smu-green;
+
+    &:hover {
+      background-color: $smu-dark-green;
+      color: white;
+      border-color: $smu-dark-green;
+    }
+  }
+
+  .solid {
+    background-color: $smu-green;
+    color: white;
+  }
+}
+
 .signup-img {
   width: 80%;
 }

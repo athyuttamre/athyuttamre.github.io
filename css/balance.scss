@@ -1,0 +1,42 @@
+---
+# balance.scss
+# Specific styles for Balance case-study.
+---
+
+@import "variables";
+@import "case-study";
+
+$balance-purple: #6c0eab;
+$balance-light-purple: hsla(274, 45%, 97%, 1.00);
+
+.alt-section {
+  background-color: $balance-light-purple;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 18px;
+
+  height: 60px;
+}
+
+h1 {
+  color: $balance-purple;
+}
+
+h2 span {
+  font-weight: 300;
+}
+
+.splash {
+  margin-right: -40px;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    width: 30%;
+
+    margin-left: -40px;
+  }
+}

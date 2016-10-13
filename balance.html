@@ -29,19 +29,25 @@ css: <link rel="stylesheet" href="/css/balance.css">
         <h2>Problem</h2>
 
         <blockquote>
-          <p>How can we help students and folks with variable income keep track of their money?</p>
+          <p>How can we help students and people with variable income keep track of their money?</p>
         </blockquote>
 
         <p>
-          Students, hourly workers, Uber drivers; regular money tracking apps
-          don't work for them. Mint is too complicated, Level and so on make
-          assumptions.
+          Students, hourly workers, Uber drivers—regular money tracking apps
+          don't work for them. Apps like Mint are too complicated, and apps like
+          Level make assumptions about a regular income. But these groups of people
+          also need help keeping track of their money and planning their expenses.
         </p>
 
         <p>
-          I had spent hours on Reddit researching r/personalfinance. I'd tried
-          budgeting, and so on, but really all I needed to know was how much money
-          I had, and where it was going.
+          As a student, I'd spent hours on r/personalfinance and other websites
+          learning about personal finance and bugdgeting. Most solutions were
+          too complex though, and my bank's existing services were sub-par.
+        </p>
+
+        <p>
+          I figured this must be a problem shared by other students and users with
+          variable income, so I decided to try and design a solution.
         </p>
       </div>
     </div>
@@ -52,79 +58,123 @@ css: <link rel="stylesheet" href="/css/balance.css">
       <div class="content">
         <h2>Research</h2>
 
+        <h3 class="purple-text">
+          Variable Income &middot; Volatile Spending &middot; Occassional Planning
+        </h3>
+
         <p>
-          Talking to college students.
+          Talking to students around me made me realize the three characteristics
+          of my target audience: that they had variable income (some had jobs, some
+          had occassional transfers from parents); volatile spending (books at the
+          beginning of the semester); and occasional planning (too busy to sit down
+          and make a budget.)
+        </p>
 
-          Characteristically, they were folks with variable income, volatile spending,
-          occasional planning. Some had regular jobs, some got boosts of money from
-          parents a few times a year, and so on.
-
-          - They wanted to know how much money they have, where it was going.
-          - Trends to compare to past months, and knowing important things ahead
-            of time. Had too much on plate already, no time to plan.
-          - Occasional tips to help save more.
+        <p>
+          I sensed a need to have an <i>intelligent</i> money tracking app; something
+          that would help you compare your spending to previous months, let you know
+          of important things ahead of time, and occasionally give you tips to improve.
+          This culminated in the design of Balance.
         </p>
       </div>
     </div>
   </section>
 
-  <section id="solution">
+  <section id="solution" class="alt-section">
     <div class="container">
       <div class="content">
         <h2>Solution</h2>
+      </div>
+    </div>
+  </section>
 
+  <section id="bank-accounts">
+    <div class="container">
+      <figure class="col-md-8">
+        <img class="cutoff-phone" src="/img/balance/love-3.png">
+        <img class="cutoff-phone" src="/img/balance/credit-card.png">
+      </figure>
+
+      <div class="col-md-4">
+        <h3>Bank Accounts</h3>
         <p>
-          Features:
+          Balance would integrate with over 6000 banks across the country, all through
+          Plaid's Link API.
+        </p>
 
-          - Bank accounts; A simple way to keep track of your money. Works with over 6000+ bank
-          accounts, powered by Plaid.
+        <h3>Calendar View</h3>
+        <p>
+          Calendar view helps users visualize their expenses over the last few days, helping
+          build an intuition for how their money is flowing.
+        </p>
 
-            -- Calendar view to see your payments in context.
-
-            -- Integrations with Venmo, Square Cash and so on; often pay $100 in dinner,
-            but in reality your friends are paying you back. (Show BoA or Mint screenshot?)
-
-          - Trends and categories
-
-          - Challenges to keep you accounted
-
-          - Notifications
-
-          - Email Digest
+        <h3>Venmo + Square Cash Integration</h3>
+        <p>
+          Often one person will pay for a dinner, and get reimbursed from friends
+          over Venmo or Square Cash. Balance integrates with these apps to make those
+          payments transparent.
         </p>
       </div>
+    </div>
+  </section>
+
+  <section id="trends-and-categories" class="alt-section">
+    <div class="container">
+      <div class="col-md-4" style="padding-right: 40px;">
+        <h3>Challenges</h3>
+
+        <p>Challenges detect patterns in your spending and help you cut costs.</p>
+
+        <h3>Trends</h3>
+        <p>
+          Trends show users their spending in relation to previous months.
+        </p>
+
+        <h3>Categories</h3>
+        <p>
+          Categories (both automatic and custom ones) give perspective on what users
+          are spending most on.
+        </p>
+      </div>
+
+      <figure class="col-md-8">
+        <img class="cutoff-phone" src="/img/balance/uber-challenge.png">
+        <img class="cutoff-phone" src="/img/balance/love-2.png">
+      </figure>
     </div>
   </section>
 
   <section id="email-digest">
     <div class="container">
       <div class="content">
-        <div class="col-md-6 push-md-6">
+        <figure class="col-md-6">
+          <img class="cutoff-phone" src="/img/balance/email.png">
+        </figure>
+
+        <div class="col-md-6" style="padding-left: 40px; padding-top: 120px;">
           <h3>Email Digest</h3>
           <p>
-            Hope to build it at some point! Interested in fintech, please reach out.
+            A weekly email digest shows users a summary of their expenses, as well
+            as any warnings or personal alerts.
           </p>
         </div>
-
-        <figure class="fig-left">
-          <img src="/img/balance/email.png">
-        </figure>
       </div>
     </div>
   </section>
 
-  <section id="notifications">
+  <section id="notifications" class="alt-section">
     <div class="container">
       <div class="content">
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding-right: 40px; padding-top: 120px;">
           <h3>Notifications</h3>
           <p>
-            Hope to build it at some point! Interested in fintech, please reach out.
+            Intelligent notifications detect particular expenses—your credit card
+            bill, your monthly income, a regular transfer—and let you know instantly.
           </p>
         </div>
 
-        <figure class="fig-right">
-          <img src="/img/balance/notification-cc.png">
+        <figure class="col-md-6">
+          <img class="cutoff-phone" src="/img/balance/notification-cc.png">
         </figure>
       </div>
     </div>

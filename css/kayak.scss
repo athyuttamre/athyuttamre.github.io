@@ -43,7 +43,7 @@ h1 {
 
     &:hover {
       cursor: default;
-      background-color: rgba(237, 232, 227, 0.6); 
+      background-color: rgba(237, 232, 227, 0.6);
     }
   }
 
@@ -74,6 +74,7 @@ h1 {
 }
 
 #push-state svg {
+  margin-top: 32px;
   height: 40px;
 }
 

@@ -96,6 +96,12 @@ h1 {
   right: 0;
 }
 
+#introduction {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
 #introduction h1 {
   text-align: left;
 }
@@ -105,6 +111,16 @@ h1 .activity svg {
   transform: scale(1.8);
   margin-right: 12px;
   fill: white;
+}
+
+.final-frame {
+  width: 70%;
+  margin: 0;
+
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  bottom: 0;
 }
 
 h2 {
@@ -133,6 +149,14 @@ img.wide {
 
 #process {
   padding-bottom: 0;
+}
+
+#solution {
+  padding-bottom: 0;
+
+  img {
+    margin-bottom: 0;
+  }
 }
 
 #engineering {

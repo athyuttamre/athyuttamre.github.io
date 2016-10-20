@@ -96,6 +96,17 @@ h1 {
   right: 0;
 }
 
+#introduction h1 {
+  text-align: left;
+}
+
+h1 .activity svg {
+  height: 18px;
+  transform: scale(1.8);
+  margin-right: 12px;
+  fill: white;
+}
+
 h2 {
   color: #A1A7B2;
 }

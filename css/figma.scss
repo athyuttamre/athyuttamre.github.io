@@ -6,6 +6,178 @@
 @import "variables";
 @import "case-study";
 
+$figma-blue: #3BC3FC;
+
+body {
+  background-color: #111111;
+  color: #E0E0E0;
+}
+
+header, footer {
+  color: #828282;
+  border-top-color: #828282;
+  border-bottom-color: #828282;
+
+  a, a:visited {
+    color: #828282;
+    border-bottom: 0;
+  }
+
+  a:hover, a:focus {
+    color: white;
+    border-bottom: 0;
+  }
+}
+
+#splash {
+  position: relative;
+  height: 640px;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+
+  height: 60px;
+
+  border-radius: 4px;
+}
+
+h1 {
+  color: white;
+}
+
+.byline {
+  color: #E0E0E0;
+}
+
+#triangle, #circle, #hexagon {
+  z-index: -1;
+}
+
+#triangle {
+  background-image: url(/img/figma/triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 90%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#circle {
+  background-image: url("/img/figma/circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  height: 224px;
+  width: 30%;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+#hexagon {
+  background-image: url("/img/figma/hexagon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 100%;
+  width: 311px;
+
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+#introduction {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#introduction h1 {
+  text-align: left;
+}
+
+h1 .activity svg {
+  height: 18px;
+  transform: scale(1.8);
+  margin-right: 12px;
+  fill: white;
+}
+
+.final-frame {
+  width: 70%;
+  margin: 0;
+
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  bottom: 0;
+}
+
+h2 {
+  color: #A1A7B2;
+}
+
+blockquote {
+  color: $figma-blue;
+}
+
 .alt-section {
-  background-color: #191919;
+  background-color: #000000;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #BDBDBD;
+
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+img.wide {
+  padding: 50px 0;
+}
+
+#process {
+  padding-bottom: 0;
+}
+
+#solution {
+  padding-bottom: 0;
+
+  img {
+    margin-bottom: 0;
+  }
+}
+
+#engineering {
+  position: relative;
+}
+
+#engineering h3 {
+  margin-top: 30px;
+}
+
+.collation {
+  position: absolute;
+
+  left: -20px;
+  top: 350px;
+}
+
+a {
+  color: $figma-blue;
+
+  &:hover, &:focus {
+    color: white;
+  }
 }

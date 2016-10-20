@@ -120,6 +120,10 @@ img.wide {
   padding: 50px 0;
 }
 
+#process {
+  padding-bottom: 0;
+}
+
 #engineering {
   position: relative;
 }
@@ -133,4 +137,12 @@ img.wide {
 
   left: -20px;
   top: 350px;
+}
+
+a {
+  color: $figma-blue;
+
+  &:hover, &:focus {
+    color: white;
+  }
 }

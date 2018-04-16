@@ -18,7 +18,7 @@ html {
 
 body {
   min-height: 100vh;
-  
+
   font-family: "Atlas Grotesk", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
@@ -42,8 +42,15 @@ h1, h2 {
 }
 
 h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+h3 + p {
+  margin-top: 0;
 }
 
 h4 {

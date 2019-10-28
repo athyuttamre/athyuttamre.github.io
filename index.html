@@ -11,7 +11,8 @@
       html {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        font-size: 16px;
+        font-size: 18px;
+        -webkit-font-smoothing: antialiased;
       }
 
       @supports (font: -apple-system-body) {
@@ -22,28 +23,37 @@
 
       body {
         margin: 5% auto;
-        padding: 1.5em;
-        max-width: 32em;
+        padding: 1.5rem;
+        max-width: 32rem;
         color: #111;
       }
 
       header {
-        margin-bottom: 1.5em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+
+      header img {
+        height: 5rem;
+        width: 5rem;
+        margin-right: 1.5rem;
+        border-radius: 100%;
       }
 
       h1 {
-        margin-bottom: 0.2em;
-        font-size: 1.5em;
+        margin-bottom: 0.2rem;
+        font-size: 1.5rem;
       }
 
       p.subtitle {
         margin-top: 0;
-        margin-bottom: 0.5em;
-        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
       }
 
       p {
-        line-height: 1.5em;
+        line-height: 1.5rem;
       }
     </style>
 
@@ -56,22 +66,24 @@
 
   <body>
     <header>
-      <h1>Athyuttam (Atty) Eleti</h1>
-      <p class="subtitle">Software Engineer at Stripe</p>
-      <a
-        href="https://twitter.com/athyuttamre?ref_src=twsrc%5Etfw"
-        class="twitter-follow-button"
-        data-size="large"
-        data-dnt="true"
-        data-show-count="false"
-      >
-        Follow @athyuttamre
-      </a>
+      <img src="https://pbs.twimg.com/profile_images/1186497274228199426/OACKDXbW_400x400.jpg" />
+      <div>
+        <h1>Atty Eleti</h1>
+        <p class="subtitle">Software Engineer at Stripe</p>
+        <a
+          href="https://twitter.com/athyuttamre?ref_src=twsrc%5Etfw"
+          class="twitter-follow-button"
+          data-size="large"
+          data-dnt="true"
+          data-show-count="false"
+        >
+          Follow @athyuttamre
+        </a>
+      </div>
     </header>
 
     <p>
-      I'm Atty Eleti (@athyuttamre). I'm a developer and designer, and currently
-      work at Stripe in San Francisco, helping improve payments on the web.
+      My name is Atty Eleti, and I'm an engineer at Stripe living in San Francisco.
     </p>
 
     <p>
